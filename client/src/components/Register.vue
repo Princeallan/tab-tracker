@@ -1,26 +1,25 @@
 <template>
-  <v-container fluid fill-height>
-    <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md4>
-        <v-card class="elevation-12">
-          <v-toolbar color="cyan" dark>
-            <v-toolbar-title>Register form</v-toolbar-title>
-          </v-toolbar>
+  <v-layout align-center justify-center>
+    <v-flex xs12 sm8 md4>
+      <v-card class="elevation-12">
+        <v-toolbar color="cyan" dark>
+          <v-toolbar-title>Register form</v-toolbar-title>
+        </v-toolbar>
 
-          <v-card-text>
+        <v-card-text>
           <v-text-field
             type="text"
             placeholder="Email"
             name="email"
-            v-model="email"> </v-text-field>
-            <br>
-            <v-text-field
+            v-model="email"></v-text-field>
+          <br>
+          <v-text-field
             type="password"
             placeholder="Password"
             name="password"
-            v-model="password"> </v-text-field>
-            <br>
-            <div class="error" v-html="error"></div>
+            v-model="password"></v-text-field>
+          <br>
+          <div class="error" v-html="error"></div>
         </v-card-text>
 
         <v-card-actions>
@@ -28,14 +27,14 @@
           <v-btn @click="register" dark class="cyan">Register</v-btn>
         </v-card-actions>
 
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </v-container>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
 import AuthenticationService from '@/services/AuthenticationService'
+
 export default {
   data () {
     return {
