@@ -23,5 +23,6 @@ export default new Router({
       name: 'login',
       component: Login
     }
-  ]
+  ],
+  mode: 'history'
 })

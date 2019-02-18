@@ -22,14 +22,14 @@ module.exports = {
 
       if (!user) {
         return res.status(403).send({
-          error: 'The login information is incorrect1'
+          error: 'The login information is incorrect'
         })
       }
 
       const isPasswordValid = password === user.password
       if (!isPasswordValid) {
         return res.status(403).send({
-          error: 'The login information is incorrect2'
+          error: 'The login information is incorrect'
         })
       }
 
